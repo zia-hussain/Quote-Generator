@@ -128,17 +128,14 @@ scale: 1;
     background-color: #fff;
     color: #333;
 }
-.quote-box .functions button img{
-    width: 40px;
-    margin-right: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-transform: translate(-50%,-50%);
-}
 .left-functions{
     display: flex;
     gap: 20px;
+
+}
+
+.left-functions button{
+    cursor: pointer;
 }
 @media (max-width:600px){
     .quote-box {
