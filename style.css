@@ -19,16 +19,16 @@ body {
   color: #000;
 }
 .quote-box {
-    width: 700px;
-    min-height: 50vh;
-    /* background-color: rgba(130, 130, 130, 0.5); */
-    backdrop-filter: blur(10px);
-    text-align: center;
-    padding: 20px;
-    border-radius: 25px;
-    box-shadow: 1px 30px 20px 5px rgba(0, 0, 0, 0.2),
-      inset 10px 3px 20px 5px rgba(0, 0, 0, 0.2);
-  }
+  width: 700px;
+  min-height: 50vh;
+  /* background-color: rgba(130, 130, 130, 0.5); */
+  backdrop-filter: blur(10px);
+  text-align: center;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 1px 30px 20px 5px rgba(0, 0, 0, 0.2),
+    inset 10px 3px 20px 5px rgba(0, 0, 0, 0.2);
+}
 
 .quote-box h2 {
   padding: 10px;
@@ -59,108 +59,105 @@ body {
   padding-inline: 12px;
   border-bottom: 1px solid #333;
   /* background: #000; */
-
 }
 .quote-box blockquote::before,
 .quote-box blockquote::after {
-
-    content: ' " ';
+  content: ' " ';
 }
-.quote-box span{
-    display: block;
-    /* margin-top: 10px; */
-    float: right;
-    position: relative;
-    padding: 10px;
-    color: #fff8;
-    border-bottom: 1px solid #333;
+.quote-box span {
+  display: block;
+  /* margin-top: 10px; */
+  float: right;
+  position: relative;
+  padding: 10px;
+  color: #fff8;
+  border-bottom: 1px solid #333;
 }
-.quote-box span::before{
-    content: '';
-    width: 20px;
-    height: 2px;
-    background: #333;
-    position: absolute;
-    top: 50%;
-    left: -20px;
+.quote-box span::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: 50%;
+  left: -20px;
 }
-.quote-box .functions{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding-inline: 5px;
+.quote-box .functions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding-inline: 5px;
 }
-.quote-box .right-functions button{
-    padding: 10px 20px;
-    border-radius: 50px;
-    background-color: #fff;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 10px;
-    border: 2px solid #fff8;
-    transition: all 0.2s;
-    position: relative;
-
+.quote-box .right-functions button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  border: 2px solid #fff8;
+  transition: all 0.2s;
+  position: relative;
 }
-.quote-box .right-functions button:nth-child(1):hover{
-    scale: 0.95;
-
-}.quote-box .right-functions button:nth-child(1):active{
-scale: 1;
+.quote-box .right-functions button:nth-child(1):hover {
+  scale: 0.95;
 }
-.quote-box .left-functions button{
-    border: 2px solid #fff8;
-    background-color: transparent;
-    color: #fff;
-    transition: all 0.2s ;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+.quote-box .right-functions button:nth-child(1):active {
+  scale: 1;
 }
-.quote-box .left-functions button:hover{
-    border: 2px solid #fff;
-    background-color: #fff;
-    color: #333;
+.quote-box .left-functions button {
+  border: 2px solid #fff8;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.2s;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
-.left-functions{
-    display: flex;
-    gap: 20px;
-
+.quote-box .left-functions button:hover {
+  border: 2px solid #fff;
+  background-color: #fff;
+  color: #333;
+}
+.left-functions {
+  display: flex;
+  gap: 20px;
 }
 
-.left-functions button{
-    cursor: pointer;
+.left-functions button {
+  cursor: pointer;
 }
-@media (max-width:600px){
-    .quote-box {
-        min-height: 100vh;
-        padding: 20px;
-        padding-block: 40px;
-        margin-top: 20px;
-        border-radius: 0;
-      }
-      .quote-box blockquote {
-        min-height: 110px;
-        margin-top: 20px;
-        padding-inline: 0;
-        padding-block: 20px;
-        line-height: 32px;
-        border-bottom: 1px solid #333;
-      }
-      .quote-box span{
-        border-bottom: 1px solid #333;
-      }
-      .quote-box div button{
-        margin-top: 40px;
-      }
-      .quote-box hr{
-       display: none;
+@media (max-width: 600px) {
+    body{
+        width: 100vw;
+        height: 100vh;
     }
-    
+  .quote-box {
+    min-height: 100vh;
+    padding: 20px;
+    /* padding-block: 40px; */
+    margin-top: 20px;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .quote-box blockquote {
+    padding-inline: 0;
+    line-height: 32px;
+  }
+  .functions {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .functions {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
 }

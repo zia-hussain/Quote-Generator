@@ -13,7 +13,7 @@
     getQuote(api_url)
 
     function tweet(){
-        window.open('https://twitter.com/intent/tweet?text=' + quote.innerHTML + "  __  by  " + author.innerHTML, "Tweet Window", "width=700, height=300")
+      let tweeted =  window.open('https://twitter.com/intent/tweet?text=' + quote.innerHTML + "  __  by  " + author.innerHTML, "Tweet Window", "width=700, height=300")
     };
 
     // copy Function
