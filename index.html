@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quote of the day</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="quote-box">
@@ -16,9 +17,16 @@
       <span id="author">loading...</span>
       <br>
       <br>
-      <div>
-        <button onclick="getQuote(api_url)">New Quote</button>
-        <button onclick="tweet()"><img src="pngwing.com.png" />Tweet</button>
+      <div class="functions">
+        <div class="left-functions">
+            <button onclick="listenQuote()"><i class="fa-solid fa-volume-high"></i></button>
+        <button onclick="copyQuote()"><i class="fa-regular fa-copy"></i>    </button>
+        <button onclick="tweet()"><i class="fa-brands fa-twitter"></i></button>
+    </div>
+        <div class="right-functions">
+            <button onclick="getQuote(api_url)">New Quote</button>
+        
+    </div>
       </div>
     </div>
 

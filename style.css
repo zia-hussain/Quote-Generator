@@ -20,7 +20,7 @@ body {
 }
 .quote-box {
     width: 700px;
-    min-height: 40vh;
+    min-height: 50vh;
     /* background-color: rgba(130, 130, 130, 0.5); */
     backdrop-filter: blur(10px);
     text-align: center;
@@ -47,7 +47,7 @@ body {
   border-radius: 5px;
   background: #333;
   position: absolute;
-  bottom: 0px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -56,7 +56,7 @@ body {
   min-height: 110px;
   margin-top: 20px;
   color: #fff8;
-  padding-inline: 10px;
+  padding-inline: 12px;
   border-bottom: 1px solid #333;
   /* background: #000; */
 
@@ -84,15 +84,16 @@ body {
     top: 50%;
     left: -20px;
 }
-.quote-box div{
+.quote-box .functions{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 10px;
+    padding-inline: 5px;
 }
-.quote-box div button{
+.quote-box .right-functions button{
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 50px;
     background-color: #fff;
     color: #333;
     display: flex;
@@ -104,28 +105,40 @@ body {
     margin-top: 10px;
     border: 2px solid #fff8;
     transition: all 0.2s;
+    position: relative;
 
 }
-.quote-box div button:nth-child(1):hover{
+.quote-box .right-functions button:nth-child(1):hover{
     scale: 0.95;
 
-}.quote-box div button:nth-child(1):active{
+}.quote-box .right-functions button:nth-child(1):active{
 scale: 1;
 }
-.quote-box div button:nth-child(2){
+.quote-box .left-functions button{
     border: 2px solid #fff8;
     background-color: transparent;
     color: #fff;
     transition: all 0.2s ;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
 }
-.quote-box div button:nth-child(2):hover{
+.quote-box .left-functions button:hover{
     border: 2px solid #fff;
     background-color: #fff;
     color: #333;
 }
-.quote-box div button img{
-    width: 20px;
+.quote-box .functions button img{
+    width: 40px;
     margin-right: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+transform: translate(-50%,-50%);
+}
+.left-functions{
+    display: flex;
+    gap: 20px;
 }
 @media (max-width:600px){
     .quote-box {
