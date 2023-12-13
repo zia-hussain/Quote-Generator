@@ -82,6 +82,12 @@ body {
   top: 50%;
   left: -20px;
 }
+.quote-box img{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  /* border-radius: 50%; */
+}
 .quote-box .functions {
   width: 100%;
   display: flex;
@@ -161,3 +167,4 @@ body {
     width: 100%;
   }
 }
+

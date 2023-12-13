@@ -17,8 +17,6 @@
     };
 
     // copy Function
-
-
     function copyQuote() {
         const textToCopy = quote.textContent || quote.innerText;
 
@@ -33,8 +31,6 @@
 
 
     //  Sound Function 
-
-
    function listenQuote() {
     const speech = new SpeechSynthesisUtterance();
     const textToRead = quote.textContent || quote.innerText;
